@@ -19,10 +19,10 @@ To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
 ```
-$ cd
-$ git clone https://github.com/gpakosz/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
+cd ~
+git clone https://github.com/ZhiyuanChen/.tmux.git
+ln -s -f .tmux/.tmux.conf
+ln -s -f .tmux/.tmux.conf.local
 ```
 
 💡 You can clone the repository anywhere you want, provided you create the
@@ -30,9 +30,9 @@ proper `~/.tmux.conf` symlink and you copy the `.tmux.conf.local` sample file in
 your home directory:
 
 ```
-$ git clone https://github.com/gpakosz/.tmux.git /path/to/oh-my-tmux
-$ ln -s -f /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
-$ cp /path/to/oh-my-tmux/.tmux.conf.local ~/.tmux.conf.local
+git clone https://github.com/ZhiyuanChen/.tmux.git /path/to/oh-my-tmux
+ln -s -f /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf
+ln -s -f /path/to/oh-my-tmux/.tmux.conf ~/.tmux.conf.local
 ```
 
 Then proceed to [customize] your `~/.tmux.conf.local` copy.
@@ -50,8 +50,6 @@ Development][bhtmux2] by [@bphogan].
 
 Troubleshooting
 ---------------
-
- - **I'm running tmux `HEAD` and things don't work properly. What should I do?**
 
    Please open an issue describing what doesn't work with upcoming tmux. I'll do
    my best to address it.
@@ -183,7 +181,7 @@ This configuration uses the following bindings:
 
 Additionally, `copy-mode-vi` matches [my own Vim configuration][]
 
-[my own Vim configuration]: https://github.com/gpakosz/.vim.git
+[my own Vim configuration]: https://github.com/ZhiyuanChen/.vim.git
 
 Bindings for `copy-mode-vi`:
 
