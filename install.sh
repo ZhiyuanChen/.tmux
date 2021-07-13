@@ -1,7 +1,7 @@
 #!/bin/bash
 # Oh my tmux!
 # 💛🩷💙🖤❤️🤍
-# https://github.com/gpakosz/.tmux
+# https://github.com/zhiyuanchen/.tmux
 # (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
@@ -93,7 +93,7 @@ install() {
   printf '✅ Using %s\n' "${TMUX_CONF_LOCAL/#"$HOME"/'~'}" >&2
 
   printf '\n'
-  OH_MY_TMUX_REPOSITORY=${OH_MY_TMUX_REPOSITORY:-https://github.com/gpakosz/.tmux.git}
+  OH_MY_TMUX_REPOSITORY=${OH_MY_TMUX_REPOSITORY:-https://github.com/zhiyuanchen/.tmux.git}
   printf '⬇️  Cloning Oh my tmux! repository...\n' >&2
   if ! is_true "$DRY_RUN"; then
     mkdir -p "$(dirname "$OH_MY_TMUX_CLONE_PATH")"
@@ -145,7 +145,7 @@ if [ -p /dev/stdin ]; then
     self() {
       printf '# Oh my tmux!\n'
       printf '# 💛🩷💙🖤❤️🤍\n'
-      printf '# https://github.com/gpakosz/.tmux\n'
+      printf '# https://github.com/zhiyuanchen/.tmux\n'
       printf '\n'
 
       declare -f install
